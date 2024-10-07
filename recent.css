@@ -1,0 +1,261 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background: url(/img/mainbg.jpg)no-repeat center center/cover;
+    border-radius: 10PX;
+    background-attachment: fixed;
+    font-family: Andale Mono,AndaleMono,monospace; 
+    letter-spacing: -1px;
+}
+
+#navdiv
+{
+    top: 0;
+    position:fixed;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    z-index: +1;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    border-radius: 0%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+#nav-element{
+    display: flex;
+    list-style: none;
+    flex-grow: 1;
+}
+li{
+    flex-direction:row;
+}
+#btn{
+    padding: 10px;
+    padding-bottom: 8px;
+    font-style: italic;
+    border-radius: 10px;
+    border-style: none;
+    margin-left: 10px;
+    font-family: Andale Mono,AndaleMono,monospace; 
+    letter-spacing: 1px;
+  font-weight: 700;
+    background-color:#FF5733;
+}
+.accountlogo{
+    width: 37px;
+    height: 37px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#maincon{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center ;
+}
+#container1 img{
+    border-radius: 20px;
+}
+#container2 img{
+    border-radius: 20px;
+}
+#ban{
+    padding: 10px;
+    margin: 10px;
+    backdrop-filter: blur(10px);
+    border-top: 3px solid rgba(0, 0, 0, 0.4);
+    border-left: 3px solid rgba(0, 0, 0, 0.4);
+    color: rgb(0, 0, 0);
+    font-size: xx-large;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: inset  -5px -5px rgb(0, 0, 0);
+}
+#subcon{
+    backdrop-filter: blur(10px);
+    display: flex;
+    backdrop-filter: blur(100px);
+    overflow: hidden;
+    border-radius: 20px;
+    color: white;
+    
+}
+.first{
+    margin-top: 300px;
+}
+#content{
+    width: 90%;
+    padding: 10px;
+}
+.img{
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+}
+.title{
+    font-size: xx-large;    
+    font-style: italic;
+
+}
+.para{
+    font-size: x-large;
+}
+#image{
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+@import url("https://fonts.googleapis.com/css?family=Raleway:400");
+
+* {
+	box-sizing: border-box;
+    border-radius: 20%;
+
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}   
+:root {
+	--d: 2500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: #05D9FF;
+	--c2: #FF5733;
+    border-radius: 20%;
+}
+.box {
+	margin: max(2rem, 2vw);
+    background-color: rgba(0, 0, 0, 0.351);
+	border: 0.35rem solid;
+	padding: 3vw;
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+    border-radius: 50%;
+}
+
+.box:nth-child(2) {
+	border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+	animation: borderRadial var(--d) linear infinite forwards;
+    border-radius: 20px;
+}
+.box:nth-child(2) {
+	border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+	animation: borderRadial var(--d) linear infinite backwards;
+    border-radius: 20px;
+}
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
+}
+h1{
+    font-size:xx-large;
+}
+h3{
+    font-size: x-large;
+    text-shadow: 0 0 10px #05D9FF,0 0 20px #05D9FF,0 0 40px #05D9FF ,0 0 80px  #05D9FF;
+}
+p{
+    letter-spacing: -1px;
+}
+.class{
+    backdrop-filter: blur(10px
+    );
+}
+#btn:hover{
+    background-color:#05D9FF;
+    color: black;
+}
+/*
+#subcon1{
+    backdrop-filter: blur(100px);
+    border-radius: 20px;
+    margin: 20px;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+#maincon{
+    z-index: +2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#subcon1::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 800%;
+    background: linear-gradient(rgb(123, 225, 239),rgb(197, 86, 34));
+    animation: animate 4s linear infinite;
+}
+#subcon1::after{
+    content: '';
+    position: absolute;
+    background-color:transparent;
+    inset: 5px;
+}
+@keyframes animate{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+} */
+#btn a{
+    color: black;
+}
+#btn a:hover{
+    color: black;
+}
+#btn:hover{
+    background-color:#05D9FF;
+    color: black;
+}

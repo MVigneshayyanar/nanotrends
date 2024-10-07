@@ -1,0 +1,258 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background: url(/img/mainbg.jpg)no-repeat center center/cover;
+    border-radius: 10PX;
+    background-attachment: fixed;
+    font-family: Andale Mono,AndaleMono,monospace; 
+    letter-spacing: -1px;
+    height: 50vh;
+}
+#nav{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    z-index: 10000;
+    margin: 0px;
+    
+}
+
+#nav-element{
+    display: flex;
+    list-style: none;
+    flex-grow: 1;
+}
+li{
+    flex-direction:column;
+    align-items: center;
+}
+#btn{
+    padding: 10px;
+    padding-bottom: 8px;
+    font-style: italic;
+    border-radius: 10px;
+    border-style: none;
+    margin-left: 10px;
+    font-family: Andale Mono,AndaleMono,monospace; 
+    letter-spacing: 1px;
+  font-weight: 700;
+  background-color: #ff7300;
+}
+.accountlogo{
+    width: 37px;
+    height: 37px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#btn{
+    color: #ff7300;
+}
+#btn:hover{
+    background-color:#05D9FF;
+    color: black;
+}
+.video{
+    position:absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+@media(min-aspect-ratio:16/9){
+    .video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.feed
+{
+    background-color: rgba(0, 0, 0, 0);
+    background-size:cover;
+    text-align: center;
+    padding: 100px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+}
+.feed h2
+{
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+    color:#05D9FF;
+    stroke: aliceblue;
+    font-size: 35px;
+    text-align: center;
+
+}
+.feed .feed_form
+{
+    text-align: center;
+}
+.feed .feed_form form
+{
+    padding:20px;
+}
+.feed .feed_form form input
+{
+    width:30%;
+    margin: 10px;
+    padding: 8px;
+    outline: none;
+    border:none;
+}
+.feed .feed_form form textarea
+{
+    width:30%;
+    margin: 10px;
+    padding: 8px;
+    outline: none;
+    border:none;
+}
+.feed .feed_form form button
+{
+    width:30%;
+    margin: 10px;
+    padding: 8px;
+    outline: none;
+    border:none;
+    background-color: #ff7300;
+    color: rgb(0, 0, 0);
+    border: 5px;
+}
+/*--------------------------------------------FOOTER----------------------------------------*/
+footer
+{
+    background-color: black;
+    padding:50px;
+}
+footer .pages
+{
+    text-align: center;
+}
+footer .pages h3
+{
+    color: rgb(255, 226, 243);
+    font-size: 20px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+    padding: 5px;
+    font-weight: bold;
+}
+footer .pages a
+{
+    text-decoration: none;
+    margin:10px;
+    color: rgba(255, 226, 243, 0.808);
+    font-size: 15px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+}
+footer .pages a:hover
+{
+    color:white;
+}
+footer .doc
+{
+    text-align: center;
+}
+footer .doc h3
+{
+    color: rgb(255, 226, 243);
+    font-size: 20px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    padding: 5px;
+    font-weight: bold;
+}
+footer .doc a
+{
+    text-decoration: none;
+    margin:10px;
+    color: rgba(255, 226, 243, 0.808);
+    font-size: 15px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+footer .doc a:hover
+{
+    color:white;
+}
+footer .social
+{
+    text-align: center;
+}
+footer .social h3
+{
+    color: rgb(255, 226, 243);
+    font-size: 20px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    padding: 5px;
+    font-weight: bold;
+}
+footer .contact
+{
+    text-align: center;
+}
+footer .contact h3
+{
+    color: rgb(255, 226, 243);
+    font-size: 20px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    padding: 5px;
+    font-weight: bold;
+}
+footer .social a
+{
+    font-size: 30px;
+    text-decoration: none;;
+    color:rgba(247, 193, 224, 0.904);
+    margin:10px;
+}
+footer .social a:hover
+{
+    color:white;
+}
+footer .contact a
+{
+    font-size: 30px;
+    text-decoration: none;;
+    color:rgba(247, 193, 224, 0.904);
+    margin:10px;
+}
+footer .contact a:hover
+{
+    color:white;
+}
+footer p
+{
+    color:rgba(247, 178, 217, 0.726);
+}
+
+/*--------------------------------------------CONTACT---------------------------------------*/
+.contact_container
+{
+    padding: 100px;;
+}
+.contact_container h2
+{
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: rgb(92, 0, 47);
+    font-size: 33px;
+    text-align: center;
+}
+.contact_container .g_map
+{
+    border:10px solid rgb(92, 0, 47);
+}
+.contact_container .contact_content
+{
+    padding:20px;
+}
+.contact_container .contact_content p
+{
+    padding:15px;
+    font-size: 15px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+    line-height: 25px;
+}
+/*--------------------------------------------CATERING---------------------------------------*/
